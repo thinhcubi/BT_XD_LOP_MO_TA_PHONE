@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="Mobie.js/JS.js"></script>
+</head>
+<body>
+<script>
+    let samsung = new Mobile('samsung A7');
+    let iphone = new Mobile('Iphone 12 pro max');
+    samsung.turnOn();
+    iphone.turnOn();
+    samsung.writeMessage('Xin chao Iphone');
+    samsung.sendMessage(iphone);
+    console.log(iphone.getInbox());
+    console.log(iphone.getOutBox());
+</script>
+</body>
+</html>
